@@ -1,0 +1,75 @@
++------------------+
+|   Categoria     |
++------------------+
+| id (CP)          |
+| nombre           |
++------------------+
+      |
+      |
+      v
++------------------+
+|    Producto      |
++------------------+
+| id (CP)          |
+| nombre           |
+| marca            |
+| categoria_id (CF)|
+| precio_unitario  |
++------------------+
+      |
+      |
+      v
++------------------+
+|    Sucursal      |
++------------------+
+| id (CP)          |
+| nombre           |
+| direccion        |
++------------------+
+      |
+      |
+      v
++------------------+
+|      Stock       |
++------------------+
+| id (CP)          |
+| sucursal_id (CF) |
+| producto_id (CF) |
+| cantidad         |
++------------------+
+      |
+      |
+      v
++------------------+
+|    Cliente       |
++------------------+
+| id (CP)          |
+| nombre           |
+| telefono         |
++------------------+
+      |
+      |
+      v
++------------------+
+|      Orden       |
++------------------+
+| id (CP)          |
+| cliente_id (CF)  |
+| sucursal_id (CF) |
+| fecha            |
+| total            |
++------------------+
+      |
+      |
+      v
++------------------+
+|      Item        |
++------------------+
+| id (CP)          |
+| orden_id (CF)    |
+| producto_id (CF) |
+| cantidad         |
+| monto_venta      |
++------------------+
+(CP)= CLAVE PRINCIPAL
+(CF)= CLAVE FORANEA
